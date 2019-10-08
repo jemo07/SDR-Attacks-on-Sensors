@@ -14,7 +14,7 @@ The **satellite constellation** comprises satellites in low earth orbit that pro
 
 The **ground control network** tracks and maintains the satellite constellation by monitoring satellite health and signal integrity and maintaining the satellite orbital configuration. Furthermore, the ground control network also updates the *satellite clock corrections* and *ephemerides* as well as numerous other parameters essential to determining user position,velocity, and time (PVT). 
 
-The **user equipment** receives signals from the satellite constellation and computes user PVT.
+The **user equipment** receives signals from the satellite constellation and computes user PVT. [^3]
 
 ## Positioning Principles: Triangulating
 
@@ -45,5 +45,6 @@ Editing...
 
 ## Reference list
 
-[^1]: Wang,K., etc., [Time and Position Spoofing with Open Source Projects. ](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6MjcxM2JkMjllYzA1NzM2)
-[^2]: Shin,B., ..etc., [Spoofing Attack Results Determination in Code Domain Using a Spoofing Process Equation.](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2FjNzY5MzhmZDgxOWU3)
+[^1]: Wang,K., etc., [Time and Position Spoofing with Open Source Projects](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6MjcxM2JkMjllYzA1NzM2).
+[^2]: Shin,B., ..etc., [Spoofing Attack Results Determination in Code Domain Using a Spoofing Process Equation](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2FjNzY5MzhmZDgxOWU3).
+[^3]: FAA, [GNSS Frequently Asked Questions - GPS](https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/faq/gps/#1).
