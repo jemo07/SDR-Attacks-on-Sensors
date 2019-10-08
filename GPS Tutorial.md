@@ -4,7 +4,15 @@ Jianqiu Cao
 
 ## GPS Introduction
 
-Editing...
+GPS consists of three segments - the space segment (**satellite constellation**), ground segment (**ground control network**), and user segment (**user equipment**).
+
+
+
+The **satellite constellation** comprises satellites in low earth orbit that provide the ranging signals and navigation data messages to user equipment. 
+
+The **ground control network** tracks and maintains the satellite constellation by monitoring satellite health and signal integrity and maintaining the satellite orbital configuration. Furthermore, the ground control network also updates the satellite clock corrections and *ephemerides* as well as numerous other parameters essential to determining user position, velocity, and time (*PVT*). 
+
+The **user equipment** receives signals from the satellite constellation and computes user *PVT*.
 
 ## Positioning Principles: Triangulating
 
