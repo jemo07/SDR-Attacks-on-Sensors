@@ -24,13 +24,21 @@ The GPS positioning principles can be shown in Figure 2 below. [^1]
 
 Figure 2. GPS Positioning Principle
 
-If we have three satellites (Satellite 1, 2 and 3) in the constellation broadcasting their coordinates (x1, y1, z1), (x2, y2, z2), (x3, y3, z3), and we measure the durations (τ1, τ2, τ3) between the broadcasting signals are sent and received by a user equipment, we can then solve the user's coordinate by the following equations: 
+Suppose we have three satellites (Satellite 1, 2 and 3) in the constellation broadcasting their coordinates (x1, y1, z1), (x2, y2, z2), (x3, y3, z3) with timestamps, and we have also measured the durations (τ1, τ2, τ3) between the broadcasting signals are sent and received by a user equipment, we can then solve the user's coordinate (x, y, z) by the following equations: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{1})^{2}&plus;(y-y_{1})^{2}&plus;(z-z_{1})^{2}}=c\tau&space;_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{1})^{2}&plus;(y-y_{1})^{2}&plus;(z-z_{1})^{2}}=c\tau&space;_{1}" title="\sqrt{(x-x_{1})^{2}+(y-y_{1})^{2}+(z-z_{1})^{2}}=c\tau _{1}" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{2})^{2}&plus;(y-y_{2})^{2}&plus;(z-z_{2})^{2}}=c\tau_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{2})^{2}&plus;(y-y_{2})^{2}&plus;(z-z_{2})^{2}}=c\tau_{2}" title="\sqrt{(x-x_{2})^{2}+(y-y_{2})^{2}+(z-z_{2})^{2}}=c\tau_{2}" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{3})^{2}&plus;(y-y_{3})^{2}&plus;(z-z_{3})^{2}}=c\tau_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{3})^{2}&plus;(y-y_{3})^{2}&plus;(z-z_{3})^{2}}=c\tau_{3}" title="\sqrt{(x-x_{3})^{2}+(y-y_{3})^{2}+(z-z_{3})^{2}}=c\tau_{3}" /></a>
+
+, where c is the velocity of electromagnet wave.
+
+However, the problem is more complex in engineering practice. The satellites have precise atomic clock
+on board, but the receiver doesn’t, which means the local (receiver's ) clock and satellite clock are not
+synchronized, so the measured durations τ1, τ2, τ3 are not precisely the true transmission durations, rather, the true transmission durations should be <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t_{i}&plus;\tau&space;_{i},&space;i\in&space;\left&space;\{1,&space;2,&space;3\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t_{i}&plus;\tau&space;_{i},&space;i\in&space;\left&space;\{1,&space;2,&space;3\}" title="\Delta t_{i}+\tau _{i}, i\in \left \{1, 2, 3\}" /></a>, where <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t_{i}" title="\Delta t_{i}" /></a> are the time difference between the local clock and the satellite clocks. The revised equations are as below:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{i})^{2}&plus;(y-y_{i})^{2}&plus;(z-z_{i})^{2}}=c(\Delta&space;t_{i}&plus;\tau&space;_{i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{i})^{2}&plus;(y-y_{i})^{2}&plus;(z-z_{i})^{2}}=c(\Delta&space;t_{i}&plus;\tau&space;_{i})" title="\sqrt{(x-x_{i})^{2}+(y-y_{i})^{2}+(z-z_{i})^{2}}=c(\Delta t_{i}+\tau _{i})" /></a>
 
 
 
