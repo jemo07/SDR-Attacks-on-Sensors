@@ -34,7 +34,7 @@ Suppose we have three satellites (Satellite 1, 2 and 3) in the constellation bro
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{3})^{2}&plus;(y-y_{3})^{2}&plus;(z-z_{3})^{2}}=c\tau_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{3})^{2}&plus;(y-y_{3})^{2}&plus;(z-z_{3})^{2}}=c\tau_{3}" title="\sqrt{(x-x_{3})^{2}+(y-y_{3})^{2}+(z-z_{3})^{2}}=c\tau_{3}" /></a>
 
-, where c is the velocity of electromagnet wave, and <a href="https://www.codecogs.com/eqnedit.php?latex=c\tau&space;_{1},c\tau&space;_{2},c\tau&space;_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c\tau&space;_{1},c\tau&space;_{2},c\tau&space;_{3}" title="c\tau _{1},c\tau _{2},c\tau _{3}" /></a> are the range from the satellite to the receiver.
+, where c is the velocity of electromagnet wave, and <a href="https://www.codecogs.com/eqnedit.php?latex=c\tau&space;_{1},c\tau&space;_{2},c\tau&space;_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c\tau&space;_{1},c\tau&space;_{2},c\tau&space;_{3}" title="c\tau _{1},c\tau _{2},c\tau _{3}" /></a> are the range from the satellites to the receiver.
 
 However, the problem is more complex in engineering practice. The satellites have precise atomic clock
 on board, but the receiver doesn’t, which means the local (receiver's) clock and satellite clock are not
