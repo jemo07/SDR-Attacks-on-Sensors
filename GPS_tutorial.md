@@ -89,4 +89,5 @@ Editing...
 [^2]: Shin, B., etc., [Spoofing Attack Results Determination in Code Domain Using a Spoofing Process Equation](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2FjNzY5MzhmZDgxOWU3). 
 
 [^3]: FAA, [GNSS Frequently Asked Questions - GPS](https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/faq/gps/#1). 
+
 [^4]: Tippenhauer, N., etc., [On the Requirements for Successful GPS Spoofing Attacks](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2QwNGMzOGYzNzdiNjhiOA)
