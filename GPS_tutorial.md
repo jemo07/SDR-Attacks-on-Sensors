@@ -34,15 +34,17 @@ Suppose we have three satellites (Satellite 1, 2 and 3) in the constellation bro
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{3})^{2}&plus;(y-y_{3})^{2}&plus;(z-z_{3})^{2}}=c\tau_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{3})^{2}&plus;(y-y_{3})^{2}&plus;(z-z_{3})^{2}}=c\tau_{3}" title="\sqrt{(x-x_{3})^{2}+(y-y_{3})^{2}+(z-z_{3})^{2}}=c\tau_{3}" /></a>
 
-, where c is the velocity of electromagnet wave.
+, where c is the velocity of electromagnet wave, and <a href="https://www.codecogs.com/eqnedit.php?latex=c\tau&space;_{1},c\tau&space;_{2},c\tau&space;_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c\tau&space;_{1},c\tau&space;_{2},c\tau&space;_{3}" title="c\tau _{1},c\tau _{2},c\tau _{3}" /></a> are the range from the satellite to the receiver.
 
 However, the problem is more complex in engineering practice. The satellites have precise atomic clock
-on board, but the receiver doesn’t, which means the local (receiver's ) clock and satellite clock are not
+on board, but the receiver doesn’t, which means the local (receiver's) clock and satellite clock are not
 synchronized, so the measured durations τ1, τ2, τ3 are not precisely the true transmission durations, rather, the true transmission durations should be <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t_{i}&plus;\tau&space;_{i},&space;i\in&space;\left&space;\{1,&space;2,&space;3\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t_{i}&plus;\tau&space;_{i},&space;i\in&space;\left&space;\{1,&space;2,&space;3\}" title="\Delta t_{i}+\tau _{i}, i\in \left \{1, 2, 3\}" /></a>, where <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t_{i}" title="\Delta t_{i}" /></a> is the time difference between the local clock and the satellite clock. The revised equations are as below:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{i})^{2}&plus;(y-y_{i})^{2}&plus;(z-z_{i})^{2}}=c(\Delta&space;t_{i}&plus;\tau&space;_{i}),&space;i\in&space;\{1,&space;2,&space;3\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{i})^{2}&plus;(y-y_{i})^{2}&plus;(z-z_{i})^{2}}=c(\Delta&space;t_{i}&plus;\tau&space;_{i}),&space;i\in&space;\{1,&space;2,&space;3\}" title="\sqrt{(x-x_{i})^{2}+(y-y_{i})^{2}+(z-z_{i})^{2}}=c(\Delta t_{i}+\tau _{i}), i\in \{1, 2, 3\}" /></a>
 
-As the satellite clocks are well synchronized, we can assume that  <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t&space;_{1}=\Delta&space;t&space;_{2}=\Delta&space;t&space;_{3}=\Delta&space;t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t&space;_{1}=\Delta&space;t&space;_{2}=\Delta&space;t&space;_{3}=\Delta&space;t" title="\Delta t _{1}=\Delta t _{2}=\Delta t _{3}=\Delta t" /></a>. If we can receive the data from a 4th satellite, we can then add the 4th equation to the equation set, which becomes: 
+We call <a href="https://www.codecogs.com/eqnedit.php?latex=c(\Delta&space;t_{i}&plus;\tau&space;_{i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c(\Delta&space;t_{i}&plus;\tau&space;_{i})" title="c(\Delta t_{i}+\tau _{i})" /></a> "*pseudorange*".
+
+As the satellite clocks are well synchronized, we can assume that  <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t&space;_{1}=\Delta&space;t&space;_{2}=\Delta&space;t&space;_{3}=\Delta&space;t" target="_blank"></a>. If we can receive the data from a 4th satellite, we can then add the 4th equation to the equation set, which becomes: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{1})^{2}&plus;(y-y_{1})^{2}&plus;(z-z_{1})^{2}}=c(\Delta&space;t&plus;\tau&space;_{1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{1})^{2}&plus;(y-y_{1})^{2}&plus;(z-z_{1})^{2}}=c(\Delta&space;t&plus;\tau&space;_{1})" title="\sqrt{(x-x_{1})^{2}+(y-y_{1})^{2}+(z-z_{1})^{2}}=c(\Delta t+\tau _{1})" /></a>
 
@@ -64,7 +66,7 @@ Editing...
 
 **GPS Simulator Attacks**[^1]
 
-* Generate fake ephemeris data which includes spoofing location.
+* Generate fake *ephemeris* data which includes spoofing location.
 
 * Transmit signal using SDR (Software Defined Radio) platforms.
 
@@ -73,7 +75,7 @@ Editing...
 
 **C/A Code Spoofing Attack**[^2]
 
-* Does not change the navigation message, but rather tampers with the pseudorange between the satellite and receiver. 
+* Does not change the navigation message, but rather tampers with the *pseudorange* between the satellite and receiver. 
 * The spoofer estimates the position and velocity of the victim thru radar and transmits an artificial seamless signal that conveys spoofing C/A code.
 
 
