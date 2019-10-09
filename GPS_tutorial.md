@@ -44,7 +44,7 @@ synchronized, so the measured durations τ1, τ2, τ3 are not precisely the true
 
 We call <a href="https://www.codecogs.com/eqnedit.php?latex=c(\Delta&space;t_{i}&plus;\tau&space;_{i})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c(\Delta&space;t_{i}&plus;\tau&space;_{i})" title="c(\Delta t_{i}+\tau _{i})" /></a> "*pseudorange*".
 
-As the satellite clocks are well synchronized, we can assume that  <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t&space;_{1}=\Delta&space;t&space;_{2}=\Delta&space;t&space;_{3}=\Delta&space;t" target="_blank"></a>. If we can receive the data from a 4th satellite, we can then add the 4th equation to the equation set, which becomes: 
+As the satellite clocks are well synchronized, we can assume that  <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t&space;_{1}=\Delta&space;t&space;_{2}=\Delta&space;t&space;_{3}=\Delta&space;t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t&space;_{1}=\Delta&space;t&space;_{2}=\Delta&space;t&space;_{3}=\Delta&space;t" title="\Delta t _{1}=\Delta t _{2}=\Delta t _{3}=\Delta t" /></a>. If we can receive the data from a 4th satellite, we can then add the 4th equation to the equation set, which becomes: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{(x-x_{1})^{2}&plus;(y-y_{1})^{2}&plus;(z-z_{1})^{2}}=c(\Delta&space;t&plus;\tau&space;_{1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{(x-x_{1})^{2}&plus;(y-y_{1})^{2}&plus;(z-z_{1})^{2}}=c(\Delta&space;t&plus;\tau&space;_{1})" title="\sqrt{(x-x_{1})^{2}+(y-y_{1})^{2}+(z-z_{1})^{2}}=c(\Delta t+\tau _{1})" /></a>
 
