@@ -66,18 +66,18 @@ Editing...
 
 **GPS Simulator Attacks**[^1]
 
-* Generate fake *ephemeris* data which includes spoofing location.
+* Use *ephemeris* data (BRDC file) archive and spoofing location to generate GPS signal. The opensource software gps-sdr-sim is available for this use.[^5]
 
-* Transmit signal using SDR (Software Defined Radio) platforms.
+* Transmit the signal using SDR (Software Defined Radio) platforms.
 
   ​
 
 
 **C/A Code Spoofing Attack**[^2][^4]
 
-* Does not change the navigation message, but rather tampers with the *pseudorange* between the satellite and receiver. 
-* The spoofer estimates the position and velocity of the victim thru radar and transmits an artificial seamless signal that conveys spoofing C/A code.
-* Able to spoof Military GPS under certain restrictions.[^4]
+* Does not change the navigation message, but only tampers with the *pseudorange* between the satellite and receiver. 
+* The spoofer estimates the position and velocity of the victim and then transmits an artificial seamless signal that conveys spoofing C/A code.
+* Can be used for spoofing Military GPS under certain restrictions.[^4]
 
 
 
@@ -90,4 +90,6 @@ Editing...
 
 [^3]: FAA, [GNSS Frequently Asked Questions - GPS](https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/faq/gps/#1). 
 
-[^4]: Tippenhauer, N., etc., [On the Requirements for Successful GPS Spoofing Attacks](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2QwNGMzOGYzNzdiNjhiOA)
+[^4]: Tippenhauer, N., etc., [On the Requirements for Successful GPS Spoofing Attacks](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2QwNGMzOGYzNzdiNjhiOA).
+
+[^5]: Takuji Ebinuma, [gps-sdr-sim](https://github.com/osqzss/gps-sdr-sim).
