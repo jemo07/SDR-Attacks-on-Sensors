@@ -66,7 +66,7 @@ Editing...
 
 **GPS Simulator Attacks**[^1]
 
-* Use *ephemeris* data (BRDC file) archive and spoofing location to generate GPS signal. The opensource software gps-sdr-sim is available for this use.[^5]
+* Use *ephemeris* data (BRDC file) archive and spoofing location to generate GPS baseband signal data streams. The opensource software GPS-SDR-SIM is available for this use.[^5]
 
 * Transmit the signal using SDR (Software Defined Radio) platforms.
 
@@ -92,4 +92,4 @@ Editing...
 
 [^4]: Tippenhauer, N., etc., [On the Requirements for Successful GPS Spoofing Attacks](https://docs.google.com/a/hawaii.edu/viewer?a=v&pid=sites&srcid=aGF3YWlpLmVkdXx1aC11YXMtcHJvamVjdHN8Z3g6N2QwNGMzOGYzNzdiNjhiOA).
 
-[^5]: Takuji Ebinuma, [gps-sdr-sim](https://github.com/osqzss/gps-sdr-sim).
+[^5]: Takuji Ebinuma, [GPS-SDR-SIM](https://github.com/osqzss/gps-sdr-sim).
