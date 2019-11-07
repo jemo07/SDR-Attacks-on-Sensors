@@ -1,9 +1,9 @@
-# -SDR-Attacks-on-Sensors-
+# SDR-Attacks-on-Sensors
 
 For more information, see the [SDR Attacks on Sensors wiki](https://github.com/jianqiucao/SDR-Attacks-on-Sensors/wiki)
 
 
-The following file included in the repo are needed for the GPS Spoofing experiment(See the Wiki)
+The following file included in the repo are needed for the GPS Spoofing experiment (See the Wiki).
 
 * gps-sdr-sim.exe: executable for generating GPS bitstream
 * bladerf.script: script for bladeRF-cli
